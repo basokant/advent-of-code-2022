@@ -85,9 +85,8 @@ Find the top three Elves carrying the most Calories. How many Calories are those
 
 def top_three_calories(elves: list[list[int]]) -> int:
     """Returns the total number of calories carried by the top three calorie carrying elves."""
-    sorted_totals = total_calories(elves)
-    sorted_totals.sort()
-    return sum(sorted_totals[-3:])
+    totals = total_calories(elves).sort()
+    return sum(totals[-3:])
 
 # Part 2 Solution
 elves = file_to_elves("input.txt")
