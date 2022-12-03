@@ -4,6 +4,7 @@ move_to_points_map = {
     'scissors': 3
 }
 
+# 
 move_beats_map = {
     'rock': 'scissors',
     'paper': 'rock',
